@@ -1,4 +1,5 @@
 # extensively referenced https://github.com/nicknisi/dotfiles
+# hello
 
 # tmux display things in 256 colors
 set -g default-terminal "screen-256color"
@@ -86,4 +87,4 @@ bind -t vi-copy 'y' copy-selection
 ### Color & Style Settings ###
 ##############################
 
-source ~/dotfiles/tmux/theme.sh
+source ~/ajlc-env/tmux/theme.sh

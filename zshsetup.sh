@@ -1,5 +1,4 @@
-dir=~/ajlc-env
-
+#!/bin/bash
 # launch zsh
 zsh
 
@@ -13,4 +12,4 @@ for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
 done
 
 # set zsh as default shell:
-chsh -s /bin/zsh
+chsh -s $(which zsh)

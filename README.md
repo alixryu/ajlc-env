@@ -3,11 +3,13 @@ heavenk21 dotfiles for linux/osx
 
 ## vimrc
 
+## gitconfig
+
 ## tumuxconf
 
 ## prezto-zsh
 
-## pondfile - setup file
+## ajlcsetup - setup file
 
 ---
 ## About the project title

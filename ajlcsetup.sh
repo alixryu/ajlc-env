@@ -5,4 +5,4 @@ AJLCHOME=$HOME/ajlc-env
 # tmux, git setup
 ./$AJLCHOME/pondfile.sh
 # zsh setup
-./$AJLCHOME/zshsetup.sh
+./$AJLCHOME/zsh/zshsetup.sh

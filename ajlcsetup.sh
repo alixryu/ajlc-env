@@ -1,8 +1,8 @@
 #!/bin/bash
-AJLCHOME=$HOME/ajlc-env
+AJLCHOME="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 # vim setup
-./$AJLCHOME/vimrc/vimsetup.sh
+$AJLCHOME/vimrc/vimsetup.sh
 # tmux, git setup
-./$AJLCHOME/pondfile.sh
+$AJLCHOME/pondfile.sh
 # zsh setup
-./$AJLCHOME/zsh/zshsetup.sh
+$AJLCHOME/zsh/zshsetup.sh

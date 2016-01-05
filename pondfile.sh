@@ -1,6 +1,5 @@
 #!/bin/bash
-
-DOTHOME=$HOME/ajlc-env
+DOTHOME="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 linkables=$( find -H "$DOTHOME" -maxdepth 2 -name "*.link" )
 
 echo -e "\nCreating symbolic links..."

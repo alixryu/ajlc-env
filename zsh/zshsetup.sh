@@ -1,7 +1,4 @@
-#!/bin/bash
-# launch zsh
-zsh
-
+#!/bin/zsh
 # clone sorin-ionescu/prezto
 git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 

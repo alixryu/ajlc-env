@@ -1,0 +1,9 @@
+[user]
+	name = heavenk21
+	email = heavenk21@gmail.com
+[push]
+	default = simple
+[core]
+	editor = vim
+[alias]
+	graph = log --graph --oneline --decorate --all

@@ -86,4 +86,4 @@ bind -t vi-copy 'y' copy-selection
 ### Color & Style Settings ###
 ##############################
 
-source "$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/theme.sh"
+source ~/.tmuxtheme.sh

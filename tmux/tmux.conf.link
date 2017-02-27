@@ -1,8 +1,8 @@
 # extensively referenced https://github.com/nicknisi/dotfiles
 
 # tmux display things in 256 colors
-set -g default-terminal "screen-256color"
-set -g status-utf8 on
+set -g default-terminal "xterm-256color-italic"
+set-option -ga terminal-overrides ",xterm-256color-italic:Tc"
 
 # automatically renumber tmux windows
 set -g renumber-windows on
@@ -64,12 +64,8 @@ bind -r K resize-pane -U 10
 bind -r L resize-pane -R 10
 
 # enable mouse support for switching panes/windows
-# NOTE: This breaks selecting/copying text on OSX
-# To select text as expected, hold Option to disable it (iTerm2)
-setw -g mode-mouse on
-set -g mouse-select-pane on
-set -g mouse-resize-pane on
-set -g mouse-select-window on
+setw -g mouse on
+# set-option -g -q mouse on
 
 # set vi mode for copy mode
 setw -g mode-keys vi
@@ -81,6 +77,11 @@ unbind p
 bind p paste-buffer
 bind -t vi-copy 'v' begin-selection
 bind -t vi-copy 'y' copy-selection
+
+
+# Buffers to/from Mac clipboard, yay tmux book from pragprog
+bind C-c run "tmux save-buffer - | reattach-to-user-namespace pbcopy"
+bind C-v run "tmux set-buffer $(reattach-to-user-namespace pbpaste); tmux paste-buffer"
 
 ##############################
 ### Color & Style Settings ###
